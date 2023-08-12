@@ -29,6 +29,6 @@ cd ${SRCDIR}
 sed -i 's/^CXX = c++$/CXX = c++ -static/' makefile
 
 # Build static binary and strip debug symbols
-make
+make -j 2
 
 strip PtokaX

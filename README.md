@@ -9,3 +9,7 @@ This version is compiled without any database support (SQLite, MySQL or Postgres
 ```bash
 docker run -p 411:411 rsubr/ptokax
 ```
+
+## Notes
+1. Config dir is mounted in `/cfg`, bind mount it externally to customize settings.
+2. This container is based on Ubuntu Jammy and PtokaX runs as the `www-data` user.
