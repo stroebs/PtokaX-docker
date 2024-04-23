@@ -5,7 +5,7 @@ COPY    ./build.sh /root
 RUN     /root/build.sh
 
 FROM ubuntu:jammy
-LABEL Author="Raja Subramanian" Description="PtokaX DC++ Hub"
+LABEL Author="Stroebs" Description="PtokaX DC++ Hub"
 
 # Stop apt/dpkg from prompting for input
 ENV DEBIAN_FRONTEND=noninteractive

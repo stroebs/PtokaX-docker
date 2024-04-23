@@ -2,7 +2,7 @@ name: multi-arch docker build using qemu
 
 on:
   push:
-    branches: master
+    branches: main
   workflow_dispatch:
 
 jobs:
@@ -28,6 +28,6 @@ jobs:
       - name: build multi-arch image and push to docker hub
         run: |
           docker buildx build --push \
-            --tag rsubr/ptokax:latest  \
-            --tag rsubr/ptokax:0.5.3.0 \
+            --tag stroebs/ptokax-docker:latest  \
+            --tag stroebs/ptokax-docker:0.5.3.0 \
             --platform linux/amd64,linux/arm64 .
